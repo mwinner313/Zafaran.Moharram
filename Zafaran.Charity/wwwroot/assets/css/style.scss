@@ -1,0 +1,197 @@
+$light-gray: #767676;
+$blue: #03a9f4;
+@font-face {
+    font-family: 'KamranBold';
+    src: url('../fonts/Far_KamrnBd.eot');
+    src: local('☺'), url('../fonts/Far_KamrnBd.woff') format('woff'), url('../fonts/Far_KamrnBd.ttf') format('truetype'), url('../fonts/Far_KamrnBd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/IRANSansWeb_Bold.eot');
+	src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/eot/IRANSansWeb_Medium.eot');
+	src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/eot/IRANSansWeb_Light.eot');
+	src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/eot/IRANSansWeb_UltraLight.eot');
+	src: url('../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/IRANSansWeb.eot');
+	src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+*{
+    font-family: 'IRANSans'
+}
+a {
+    color: $light-gray;
+    &:hover {
+        text-decoration: none;
+        color: $light-gray
+    }
+}
+
+#main-nav {
+    box-shadow: 1px 0px 31px 0px $light-gray;
+    width: 100%;
+    .navbar-brand {
+        font-family: 'KamranBold';
+        color: #3e6df4;
+        font-size: 32px;
+    }
+}
+
+section.header-image {
+    img {
+        width: 100%;
+    }
+}
+
+section.supporters {
+    padding: 70px 0px;
+    text-align: center;
+    background-color: $blue;
+    h3 {
+        color: white;
+        font-weight: bold;
+    }
+    .slider {
+        margin: 140px 0px 40px 0px;
+        #silder-prev {
+            z-index: 20;
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+        }
+        #silder-next {
+            cursor: pointer;
+            position: absolute;
+            right: -78px;
+            top: 0;
+        }
+    }
+}
+
+section.download {
+    background-color: #f3eff0;
+    text-align: right;
+    padding: 70px;
+    h4 {
+        color: $blue;
+        margin: 50px 0px;
+    }
+    p {
+        margin-bottom: 100px;
+    }
+    .link-wrapper {
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: $blue;
+        a {
+            color: white;
+        }
+        margin: 0 auto;
+        width: 200px;
+    }
+    .mockup {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.products {
+    padding: 50px 0px;
+    background-image: url('../img/products-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    text-align: center;
+    h3 {
+        color: white;
+    }
+    ul {
+        margin: 150px 0px;
+        display: flex;
+        list-style: none;
+        flex: 1;
+        align-items: center;
+        justify-content: space-around;
+        li {
+            display: inline-block;
+            img {
+                padding: 20px;
+            }
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+    }
+}
+
+footer {
+    background-color: $light-gray;
+    ul {
+        margin: 0px;
+        justify-content: center;
+        display: flex;
+        flex: 1;
+        padding: 30px;
+        li {
+            padding: 0px 10px;
+            display: inline-block;
+            a {
+                i {
+                    transition: all 0.3s;
+                    padding: 15px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    &:hover {
+                        color: $blue;
+                        border: 1px solid $blue;
+                    }
+                    color: white;
+                }
+            }
+        }
+    }
+}

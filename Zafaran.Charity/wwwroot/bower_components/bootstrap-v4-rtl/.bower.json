@@ -1,0 +1,39 @@
+{
+  "name": "bootstrap-v4-rtl",
+  "homepage": "https://github.com/ahoseinian/bootstrap-v4-rtl",
+  "authors": [
+    "Amir Hoseinian <amir.anyware@gmail.com>"
+  ],
+  "description": "bootstrap#~4 rtl support",
+  "main": "rtl.css",
+  "moduleType": [],
+  "keywords": [
+    "bootstrap",
+    "rtl",
+    "persian",
+    "arabic",
+    "style"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4"
+  },
+  "version": "0.1.1",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.1",
+    "commit": "4e4814555ee480a3364b741dc378a71dc2c6c19f"
+  },
+  "_source": "https://github.com/ahoseinian/bootstrap-v4-rtl.git",
+  "_target": "^0.1.1",
+  "_originalSource": "bootstrap-v4-rtl",
+  "_direct": true
+}
