@@ -56,6 +56,8 @@ namespace Zafaran.Charity.Migrations
 
                     b.Property<string>("PhoneNumber");
 
+                    b.Property<int>("State");
+
                     b.Property<string>("StaticPhoneNumber");
 
                     b.Property<int>("TotalPrice");
@@ -83,6 +85,10 @@ namespace Zafaran.Charity.Migrations
                     b.Property<int>("OrderId");
 
                     b.Property<int>("ProductId");
+
+                    b.Property<int>("ProductPrice");
+
+                    b.Property<int>("ProductSofrehPrice");
 
                     b.Property<int>("TotalPrice");
 

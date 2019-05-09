@@ -9,8 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Payment.Refah;
 using Swashbuckle.AspNetCore.Swagger;
-using IConfigurationProvider = AutoMapper.IConfigurationProvider;
+
 
 namespace Zafaran.Charity
 {
@@ -30,6 +31,8 @@ namespace Zafaran.Charity
                     b => b.MigrationsAssembly("Zafaran.Charity")));
             services.AddMvc();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<IOrderPaymentProviderFactory, OrderPaymentProviderFactory>();
+            services.AddScoped<RefahPaymentProvider, RefahPaymentProvider>();
             services.AddAutoMapper(opt =>
             {
                 opt.AddProfiles(typeof(Startup).Assembly);

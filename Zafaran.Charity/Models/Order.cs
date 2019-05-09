@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Zafaran.Charity.Models
 {
@@ -11,6 +12,7 @@ namespace Zafaran.Charity.Models
         public int CharityId { get; set; }
         public DateTime CreatedDateTime { get; set;} = DateTime.Now;
         public PaymentStatus PaymentStatus { get; set; }
+        public OrderState State { get; set; }
         public string PaymentId { get; set; }
         public string Description { get; set; }
         public string PhoneNumber { get; set; }
@@ -19,5 +21,12 @@ namespace Zafaran.Charity.Models
         public int TotalPriceSofre { get; set; }
         public int TotalPrice { get; set; }
         public int OffPrecentage { get; set; }
+    }
+
+    public enum OrderState
+    {
+        UnKnown,
+        Accepted,
+        DeliveiriedToCharity
     }
 }

@@ -1,0 +1,18 @@
+﻿@model Payment.Refah.RefahConfirmationContext
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<a id="atag" style="display: none;">بازگشت به اپ</a>
+<script type="text/javascript">
+    document.getElementById('atag').href = "sofreh.charity:/?status=@Model.State&orderId=@Model.OrderId" ;
+    setTimeout(function (){
+            document.getElementById('atag').click();
+        },
+        2000);
+    
+</script>
+</body>
+</html>

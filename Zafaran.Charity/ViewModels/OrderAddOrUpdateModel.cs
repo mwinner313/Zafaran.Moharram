@@ -14,4 +14,11 @@ namespace Zafaran.Charity.ViewModels
         [Required]  public string StaticPhoneNumber { get; set; }
         [Required]  public string UserName { get; set; }
     }
+
+    public class OrderDescriptionUpdateModel
+    {
+        public int OrderId { get; set; }
+        public string Description { get; set; }
+    }
+    
 }
